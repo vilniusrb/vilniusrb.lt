@@ -1,0 +1,9 @@
+.next_meetup.date {
+  padding-right: 5px;
+  color: rgb(208, 2, 2);
+}
+
+.next_meetup.description {
+  padding-top: 10px;
+  font-style: italic;
+}

@@ -43,17 +43,17 @@
 
   <div class="row">
     <hr>
-    <div class="large-8 columns">
+    <div class="large-12 columns">
       <h4>Community</h4>
       <p>Welcome to the community of Lithuania's Rubyists! We're open-minded, curious and always looking
       for new ways to improve ourselves and the world around us.</p>
       <p>We meet on <strong>second Thursday of each month</strong>. Please check upcoming meetups in the right, or if you
       would like to be noticed about our community events in advance - please register for our newsletter.
       </p>
-      Follow us on <i class="fi-social-twitter">Twitter</i> + <i class="fi-social-facebook">Facebook</i>
-    </div>
-    <div class="large-4 columns">
-      <iframe width="300" height="250" src="meetup_inner_frame.html" frameborder="0"></iframe>
+      <p>
+        <a href="https://twitter.com/vilniusrb" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @vilniusrb</a>
+        todo: facebook
+      </p>
     </div>
   </div>
 
@@ -61,7 +61,7 @@
     <hr>
     <div class="large-12 columns">
       <h4>Next meetup</h4>
-      <p>TODO - with an ajax call, look into meetup_inner_frame as an example</p>
+      <p id="next">Loading...</p>
     </div>
   </div>
 
@@ -99,13 +99,13 @@
       <hr>
       <h4>Contact Us</h4>
       <div class="large-4 columns">
-        Email: hello@vilniusrb.lt
+        Email: <a href="mailto:hello@vilniusrb.lt">hello@vilniusrb.lt</a>
       </div>
       <div class="large-4 columns">
-        Twitter: @vilniusrb
+        Twitter: <a href="https://twitter.com/vilniusrb">@vilniusrb</a>
       </div>
       <div class="large-4 columns">
-        Facebook: vilniusrb
+        Facebook: <a href="https://facebook.com/vilniusrb">VilniusRB</a>
       </div>
     </div>
   </div>
@@ -129,11 +129,19 @@
       </div>
   </footer>
 
-
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script src="js/meetups/api_key.js"></script>
+  <script src="js/meetups/next_meetup.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    (function() {
+      $(document).foundation()
+      Next.call("/2/events", {group_urlname: "vilniusrb", page: "1"})
+    })()
   </script>
+
+  <!-- Twitter -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </body>
 </html>
