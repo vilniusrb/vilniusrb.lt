@@ -31,9 +31,11 @@ h4 {
 
 .logo {
   background-image: url(../images/logo.png);
-  background-size: 300px 111px;
-  width:  300px;
   height: 111px;
+  width:  300px;
+  max-width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
   text-indent: -99999em;
   float: left;
 }
