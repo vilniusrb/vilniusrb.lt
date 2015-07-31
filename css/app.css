@@ -8,6 +8,11 @@ a {
 a:hover {
   color: #a11b30;
 }
+
+h4 {
+  margin-bottom: 20px;
+}
+
 .button {
   background-color: #d7203b;
 }
@@ -32,4 +37,9 @@ a:hover {
 .next_meetup.description {
   padding-top: 10px;
   font-style: italic;
+}
+
+.large-4.columns {
+  margin-bottom: 20px;
+  padding-left: 0;
 }
