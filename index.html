@@ -19,6 +19,7 @@
 
 </head>
 <body>
+  <div id="fb-root"></div>
 
   <div class="row">
     <div class="large-12 columns">
@@ -43,12 +44,6 @@
       <p>We meet on <strong>the second Thursday of each month</strong>.
       If you would like to be noticed about our community events in
       advance - please register for our newsletter.</p>
-      <p>
-        <a href="https://twitter.com/vilniusrb"
-          class="twitter-follow-button" data-show-count="false"
-          data-size="large">Follow @vilniusrb</a>
-        todo: facebook
-      </p>
     </div>
   </div>
 
@@ -92,16 +87,19 @@
   <div class="row">
     <div class="large-12 columns">
       <hr>
-      <h4>Contact Us</h4>
+      <h4>Get in touch</h4>
       <div class="large-4 columns">
         Email: <a href="mailto:hello@vilniusrb.lt">hello@vilniusrb.lt</a>
       </div>
       <div class="large-4 columns">
-        Twitter: <a href="https://twitter.com/vilniusrb">@vilniusrb</a>
+        <a href="https://twitter.com/vilniusrb"
+          class="twitter-follow-button" data-show-count="false"
+          data-size="large">Follow @vilniusrb</a>
       </div>
-      <div class="large-4 columns">
-        Facebook: <a href="https://facebook.com/vilniusrb">VilniusRB</a>
-      </div>
+      <div class="large-4 columns fb-like"
+        data-href="https://www.facebook.com/vilniusrb"
+        data-width="300" data-layout="standard" data-action="like"
+        data-show-faces="true" data-share="true"></div>
     </div>
   </div>
 
@@ -138,5 +136,14 @@
 
   <!-- Twitter -->
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  <!-- Facebook -->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=199736590070776";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
