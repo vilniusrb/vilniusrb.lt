@@ -1,3 +1,29 @@
+body {
+  margin-top: 20px;
+}
+
+a {
+  color: #d7203b;
+}
+a:hover {
+  color: #a11b30;
+}
+.button {
+  background-color: #d7203b;
+}
+.button:hover {
+  background-color: #a11b30;
+}
+
+.logo {
+  background-image: url(../images/logo.png);
+  background-size: 300px 111px;
+  width:  300px;
+  height: 111px;
+  text-indent: -99999em;
+  float: left;
+}
+
 .next_meetup.date {
   padding-right: 5px;
   color: rgb(208, 2, 2);
