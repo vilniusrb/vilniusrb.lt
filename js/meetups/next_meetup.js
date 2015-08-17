@@ -10,9 +10,9 @@ var Next = (function($) {
       console.log(meetup)
       var out =
         "<span class='next_meetup date'>" + formattedDate(meetup.time) + "</span>"
-        + "<span class='next_meetup title'>" + meetup.name + "</span>"
-        + "<span class='next_meetup link'> <a href='" + meetup.event_url + "'>Register here</a></span>"
-        + "<div class='next_meetup description'>" + meetup.description + "</div>"
+        + "<span class='next_meetup title'>" + meetup.name + "</span>."
+        + "<span class='next_meetup link'> <a href='" + meetup.event_url + "'>Register here!</a></span>"
+        + "<div class='next_meetup description'>" + (meetup.description || 'More details soon!') + "</div>"
       $('#next').html(out)
     })
   }
