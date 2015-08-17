@@ -22,14 +22,34 @@ h4 {
   font-size: 2em;
 }
 
-.button {
-  background-color: #d7203b;
+header {
+  margin-top:    40px;
+  margin-bottom: 20px;
 }
-.button:hover {
-  background-color: #a11b30;
+
+.nav-bar {
+  margin-top: 20px;
+}
+
+.nav-bar a {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+ul.center {
+  text-align: center;
+}
+ul.center li {
+  display: inline-block;
+  float: none;
 }
 
 .logo {
+  text-align: center;
+}
+.logo a {
   background-image: url(../images/logo.png);
   height: 111px;
   width:  300px;
@@ -37,17 +57,27 @@ h4 {
   background-size: 100%;
   background-repeat: no-repeat;
   text-indent: -99999em;
-  float: left;
+  display: inline-block;
 }
 
 .next_meetup.date {
   padding-right: 5px;
-  color: rgb(208, 2, 2);
+  font-weight: bold;
 }
 
 .next_meetup.description {
   padding-top: 10px;
   font-style: italic;
+}
+
+.row {
+  margin-top: 10px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+header .row {
+  border: 0 none;
+  padding-top: 0;
 }
 
 .large-4.columns {
