@@ -1,0 +1,5 @@
+name: VilniusRB - Vilnius Ruby Community
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'

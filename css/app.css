@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=NTR|Open+Sans:400,700&subset=latin,latin-ext);
+
+body {
+  margin-top: 20px;
+  font-family: 'Open Sans';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'NTR';
+  font-weight: 400;
+}
+
+a {
+  color: #d7203b;
+}
+a:hover {
+  color: #a11b30;
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+header {
+  margin-top:    40px;
+  margin-bottom: 20px;
+}
+
+.nav-bar {
+  margin-top: 20px;
+}
+
+.nav-bar a {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+ul.center {
+  text-align: center;
+}
+ul.center li {
+  display: inline-block;
+  float: none;
+}
+
+.logo {
+  text-align: center;
+}
+.logo a {
+  background-image: url(../images/logo.png);
+  height: 111px;
+  width:  300px;
+  max-width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-indent: -99999em;
+  display: inline-block;
+}
+
+.next_meetup.date {
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+.next_meetup.description {
+  padding-top: 10px;
+  font-style: italic;
+}
+
+.row {
+  margin-top: 10px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+header .row {
+  border: 0 none;
+  padding-top: 0;
+}
+
+.large-3.columns {
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+
+.slack img {
+  margin-top: 5px;
+}
+.slack a div {
+  padding-left: 10px;
+}
+
+.credits {
+  font-size: 13px;
+}
+
+.organizers img {
+  border-radius: 4px;
+}
