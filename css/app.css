@@ -95,3 +95,7 @@ header .row {
 .credits {
   font-size: 13px;
 }
+
+.organizers img {
+  border-radius: 4px;
+}
