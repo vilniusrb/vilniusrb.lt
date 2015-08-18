@@ -91,3 +91,7 @@ header .row {
 .slack a div {
   padding-left: 10px;
 }
+
+.credits {
+  font-size: 13px;
+}
