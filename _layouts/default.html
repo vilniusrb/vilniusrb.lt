@@ -29,10 +29,11 @@
     <script type="text/javascript" charset="utf-8">
       (function() {
         $(document).foundation()
-          Next.call("/2/events", { group_urlname: "vilniusrb", page: "1" })
+        Next.call("/2/events", { group_urlname: "vilniusrb", page: "1" })
       })()
     </script>
 
+    {% include google_analytics.html %}
     {% include twitter.html %}
     {% include facebook.html %}
   </body>
