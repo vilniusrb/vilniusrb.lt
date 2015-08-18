@@ -84,3 +84,10 @@ header .row {
   margin-bottom: 30px;
   padding-left: 0;
 }
+
+.slack img {
+  margin-top: 5px;
+}
+.slack a div {
+  padding-left: 10px;
+}
