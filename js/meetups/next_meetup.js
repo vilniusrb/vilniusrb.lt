@@ -7,7 +7,6 @@ var Next = (function($) {
     var url = "http://api.meetup.com" + path + "?callback=?&" + $.param(jQuery.extend({ key: $api_key }, params))
     $.getJSON(url, function(response) {
       meetup = response.results[0]
-      console.log(meetup)
       var out =
         "<span class='next_meetup date'>" + formattedDate(meetup.time) + "</span>"
         + "<span class='next_meetup title'>" + meetup.name + "</span>."
