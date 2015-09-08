@@ -105,13 +105,29 @@ header .row {
 }
 .sponsors.unicorn img {
   max-height: 300px;
+  margin: -50px auto;
 }
 .sponsors.gold img {
   max-height: 100px;
-  max-width:  200px;
+}
+.sponsors.gold {
   margin-bottom: 50px;
 }
 .sponsors.indie img {
-  max-height: 50px;
-  max-width: 180px;
+  max-height: 60px;
+}
+
+
+@media (max-width: 620px) {
+  .sponsors.unicorn img {
+    margin: auto;
+  }
+}
+@media (max-width: 340px) {
+  .sponsors.gold img {
+    max-height: 60px;
+  }
+  .sponsors.indie img {
+    max-height: 40px;
+  }
 }
