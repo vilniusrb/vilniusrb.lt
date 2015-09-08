@@ -99,3 +99,19 @@ header .row {
 .organizers img {
   border-radius: 4px;
 }
+
+.sponsors li {
+  text-align: center;
+}
+.sponsors.unicorn img {
+  max-height: 300px;
+}
+.sponsors.gold img {
+  max-height: 100px;
+  max-width:  200px;
+  margin-bottom: 50px;
+}
+.sponsors.indie img {
+  max-height: 50px;
+  max-width: 180px;
+}
