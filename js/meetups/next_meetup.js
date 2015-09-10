@@ -18,7 +18,9 @@ var Next = (function($) {
 
   var formattedDate = function(millis) {
     var date = new Date( millis );
-    return months[date.getMonth()] + ' ' + addLeadingZero(date.getDate()) + ', ' + date.getFullYear().toString();
+    return months[date.getMonth()] + ' ' + addLeadingZero(date.getDate()) +
+      ', ' + date.getFullYear().toString() + ', ' + date.getHours() + ':0' +
+      date.getMinutes();
   }
 
   var addLeadingZero = function(num) { return (num < 10) ? ('0' + num) : num }
