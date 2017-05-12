@@ -32,8 +32,9 @@
     <!-- <script src="/js/meetups/next_meetup.js"></script> -->
     <script type="text/javascript" charset="utf-8">
       (function() {
+        jQuery.noConflict();
         $(document).foundation()
-        Next.call("/2/events", { group_urlname: "vilniusrb", page: "1" })
+        // Next.call("/2/events", { group_urlname: "vilniusrb", page: "1" })
       })()
     </script>
 
